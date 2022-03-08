@@ -1,7 +1,9 @@
 *{
     padding: 0px;margin: 0px;
 }
-
+.container{
+    width: 90% !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@700&family=Roboto:wght@100;300;400;500;600&display=swap');
 
 :root {
@@ -13,6 +15,7 @@
     --blue        : #3DBCF9;
     --green       : #31CEB7;
     --orange      : #FF9B05;
+    --black        : #000;
 
 	/*fonts*/
 	--font	  :'Roboto', sans-serif; 
@@ -23,8 +26,39 @@ body{
 	max-width: 100% !important;
 	width: 100% !important;
 	font-family: 'Redacted Script', cursive;
+    background: var(--light);
 }
+/* common css --reuseable*/
+.btn-blue{
+    background-color: var(--navyBlue);
+    color: var(--white) !important;
+}
+.btn-info{
+    background-color: var(--blue) !important;
+    color: var(--white) !important; 
+}
+/* end of common css */
 
+/* header */
 header{
     font-family: var(--font);
+    background: var(--white);
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -0.1em; 
+}
+.navbar-brand .first_brand{
+    color: var(--navyBlue);
+}
+.navbar-brand .last_brand{
+    margin-left: -5px;
+    color: var(--blue);
+}
+
+.navbar-nav{
+    font-weight: bold;
+    color: var();
 }
