@@ -29,6 +29,12 @@ body{
     background: var(--light);
 }
 /* common css --reuseable*/
+.font-primary{
+    font-family: var(--font) !important;
+}
+.font-secondary{
+    font-family: var(--font-cursive) !important;
+}
 .btn-blue{
     background-color: var(--navyBlue);
     color: var(--white) !important;
@@ -57,8 +63,33 @@ header{
     margin-left: -5px;
     color: var(--blue);
 }
-
 .navbar-nav{
     font-weight: bold;
-    color: var();
+}
+
+/* link block */
+
+#link-block{
+    height: 100vh;
+    margin-top: 10%;
+}
+
+/* link input */
+#link-input{
+    margin-top:5%;
+    margin-bottom:5%;
+}
+input[name='url']{
+    padding: 20px;
+    font-size: 25px;
+    color: var(--navyBlue) !important;
+    border: none;
+    border-bottom: 2px solid var(--navyBlue);
+    font-family: var(--font);
+}
+input[name='url']::placeholder{
+    color: var(--navyBlue);
+}
+input[name='url']::focus{
+    border: none;
 }
