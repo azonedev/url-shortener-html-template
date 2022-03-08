@@ -1,0 +1,30 @@
+*{
+    padding: 0px;margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@700&family=Roboto:wght@100;300;400;500;600&display=swap');
+
+:root {
+	/*colors*/
+	--white       : #FFFFFF;
+	--light       : #ECF7FF;
+    --navyBlue    : #00288A;
+    --lightNavy   : #9BB2D7;
+    --blue        : #3DBCF9;
+    --green       : #31CEB7;
+    --orange      : #FF9B05;
+
+	/*fonts*/
+	--font	  :'Roboto', sans-serif; 
+    --font-cursive : 'Redacted Script', cursive;
+}
+
+body{
+	max-width: 100% !important;
+	width: 100% !important;
+	font-family: 'Redacted Script', cursive;
+}
+
+header{
+    font-family: var(--font);
+}
