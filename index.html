@@ -15,10 +15,10 @@
 
 <body>
 
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+    <header class="fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light container">
             <div class="container-fluid">
-                <a class="navbar-brand h1" href="#">LinkQR</a>
+                <a class="navbar-brand h1 mt-2" href="#">LinkQR</a>
 
                 <!-- nav toggle btn -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,10 +45,59 @@
         </nav>
     </header>
     <main>
+        <div class="container mt-5">
+           <section id="link-block" class="row">
+                <div class="col-md-6 pt-5" id="link-input">
+                    <form action="" id="link-form">
+                        <div class="input-group">
+                            <input type="url" name="url" placeholder="Enter your link" class="form-control">
+                        </div>
+                        <div class="my-3 row">
+                            <div class="col-6 pt-2">
+                               
+                                
+                                <div class="input-group mb-3">
+                                    <span class="pe-3" id="basic-addon1"> 
+                                        <input type="checkbox" class="form-check-input" id="date-check" name="date_check">
+                                    </span>
+                                    <label for="date-check" aria-describedby="basic-addon1">Add expire date ?</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <input type="date" name="expire_date" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-info">IC Generate Link</button>
+                    </form>
+                </div> <!-- #link-output-->
 
+                <div class="col-md-6  bg-primary py-5" id="link-output">
+                    <div id="qr" class="text-center">
+
+                        <div class="text-center">
+                            
+                            <label for="date-check" aria-describedby="basic-addon1">https://url.azonedev.com/Xn3j5a</label>
+                            <button class="pe-3" id="basic-addon1"> 
+                                CP
+                            </button>
+                        </div>
+
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?data=mail@abdullahme.com&bgcolor=0D6EFD">
+
+                        <div class="p-4">
+                            <button class="btn btn-secondary ms-auto">DI QR</button>
+                            <button class="btn btn-info me-auto">LI Copy</button>
+                        </div>
+
+                    </div>
+                </div> <!-- #link-output-->
+
+           </section> <!-- #link-block-->
+        </div>
     </main>
 
-    <footer class="text-center">
+    <footer class="text-center mt-5">
         LinkQR @ 2022
     </footer>
 
