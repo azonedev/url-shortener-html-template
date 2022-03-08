@@ -93,3 +93,10 @@ input[name='url']::placeholder{
 input[name='url']::focus{
     border: none;
 }
+
+
+/* footer */
+footer{
+    background: var(--white) !important;
+    color: var(--navyBlue) !important;
+}
