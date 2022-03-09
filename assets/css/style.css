@@ -95,8 +95,12 @@ input[name='url']::focus{
 }
 
 
+/* link-output */
+#qr{
+    border-radius: 7%;
+}
+
 /* footer */
 footer{
-    background: var(--white) !important;
     color: var(--navyBlue) !important;
 }
