@@ -71,7 +71,51 @@
 
                 <!-- analitics -->
                 <section id="analitics" class="bg-white rounded shadow-sm p-3 row">
+                    
+                    <!-- filter -->
+                    <div class="filter-data p-3 d-flex justify-content-between">
 
+                        <!-- select link -->
+                        <div>
+                           <form action="">
+                               <select name="link_id" class="form-control" onchange="this.form.submit()">
+                                    <option value="">All Links</option>
+                                    <option value="1">https://www.facebook.com/abdullah.me.info/</option>
+                                    <option value="2">https://www.linkedin.com/in/abdullah-azonedev/</option>
+                               </select>
+                           </form>
+                        </div>
+
+                        <!-- group-by -->
+                        <div>
+                            <form action="" method="get">
+
+                                <button class="btn btn-sm btn-outline-primary" name="group_by"  onclick="this.form.submit()" value="day">Daily</button>
+
+                                <button class="btn btn-sm btn-outline-primary" name="group_by"  onclick="this.form.submit()" value="week">Weekly</button>
+
+                                <button class="btn btn-sm btn-outline-primary" name="group_by"  onclick="this.form.submit()" value="month">Monthly</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- filter by date range -->
+                    <div class="date-range mb-3">
+                        <form action="" method="" class="d-flex justify-content-between">
+                            <span class="fw-bold">Filter by date range : </span>
+                            <div class="start-date">
+                                Start Date : <input type="date" name="start_date">
+                            </div>
+                            
+                            <div class="end-date">
+                                End Date :  <input type="date" name="end_date">
+                            </div>
+                           
+                            <button class="btn btn-sm btn-primary ml-3">Apply <img src="/assets/icons/chevrons-right.svg" alt=""></button>
+                        </form>
+                    </div>
+                    
                     <!-- visitors chart -->
                     <div class="col-lg-9">
                         <div class="p-3" id="visitorChart"></div>
