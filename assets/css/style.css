@@ -38,11 +38,19 @@ body{
 .btn-blue{
     background-color: var(--navyBlue);
     color: var(--white) !important;
+    transition: all 300ms ease-in-out;
+}.btn-blue:hover{
+    opacity: 0.8;
 }
+
 .btn-info{
     background-color: var(--blue) !important;
-    color: var(--white) !important; 
+    color: var(--white) !important;
+    transition: all 300ms ease-in-out;
+}.btn-info:hover{
+    opacity:0.8;
 }
+
 /* end of common css */
 
 /* header */
@@ -56,10 +64,10 @@ header{
     font-size: 40px;
     letter-spacing: -0.1em; 
 }
-.navbar-brand .first_brand{
+.first-brand{
     color: var(--navyBlue);
 }
-.navbar-brand .last_brand{
+.last-brand{
     margin-left: -5px;
     color: var(--blue);
 }
