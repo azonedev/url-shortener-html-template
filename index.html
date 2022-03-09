@@ -61,7 +61,8 @@
     </header>
     <main>
         <div class="container mt-5">
-           <section id="link-block" class="row">
+            <!-- link-block -->
+            <section id="link-block" class="row">
                <!-- input link -->
                 <div class="col-md-6 pt-5" id="link-input">
                     <form action="" id="link-form" class="pt-5">
@@ -112,7 +113,7 @@
                     </div>
                 </div> <!-- #link-output-->
 
-           </section> <!-- #link-block-->
+            </section> <!-- #link-block-->
         </div>
     </main>
     <hr>
@@ -124,46 +125,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- script for design intractive -->
-    <script>
-        // expire-date
-        let dateCheck = document.getElementById('date-check');
-        let expireDate = document.getElementById('expire-date');
-
-        dateCheck.addEventListener('click',function () {
-            if (dateCheck.checked==1) {
-                expireDate.style.display = "block";
-            } else {
-                expireDate.style.display = "none";
-            }
-        });
-
-        // url copy
-        let url = document.getElementById('short-url');
-
-        let copyBtnSm = document.getElementById('copy-btn-sm');
-        let copyBtn = document.getElementById('copy-btn');
-
-        // copy for small button
-        copyBtnSm.addEventListener('click',function(){
-            url.select();
-            document.execCommand('copy');
-            copyBtnSm.style.background = "#FF9B05";
-            setInterval(function() {
-                copyBtnSm.style.background = "#00288A";
-            }, 1000);
-        });
-
-        // copy for main button
-        copyBtn.addEventListener('click',function(){
-            url.select();
-            document.execCommand('copy');
-            copyBtn.style.background = "#FF9B05";
-            setInterval(function() {
-                copyBtn.style.background = "#00288A";
-            }, 1000);
-        });
-
-    </script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
 
