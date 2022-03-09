@@ -74,13 +74,13 @@
                                 
                                 <div class="input-group mb-3">
                                     <span class="pe-3" id="basic-addon1"> 
-                                        <input type="checkbox" class="form-check-input" id="date-check" name="date_check">
+                                        <input type="checkbox" class="form-check-input" id="date-check" name="date_check" checked>
                                     </span>
                                     <label for="date-check" aria-describedby="basic-addon1">Add expire date ?</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <input type="date" name="expire_date" class="form-control">
+                                <input type="date" name="expire_date" class="form-control" id="expire-date">
                             </div>
                         </div>
                         
@@ -122,6 +122,21 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script for design intractive -->
+    <script>
+        let date_check = document.getElementById('date-check');
+        let expire_date = document.getElementById('expire-date');
+
+        date_check.addEventListener('click',function () {
+            if (date_check.checked==1) {
+                expire_date.style.display = "block";
+            } else {
+                expire_date.style.display = "none";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
