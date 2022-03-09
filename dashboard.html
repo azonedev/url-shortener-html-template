@@ -64,7 +64,7 @@
     </header>
     <main>
         <div class="container mt-5">
-    
+
             <!-- dashboard -->
             <section id="dashboard" class="pt-5 row">
                 <div class="p-3"></div>
@@ -73,10 +73,10 @@
                 <section id="analitics" class="bg-white rounded shadow-sm p-3 row">
 
                     <!-- visitors chart -->
-                    <div class="col-md-9">
+                    <div class="col-lg-9">
                         <div class="p-3" id="visitorChart"></div>
                     </div>
-                    <div class="col-md-3 text-center p-5">
+                    <div class="col-lg-3 text-center p-5">
                         <div class="block bg-primary p-3 rounded text-white">
                             150 <img src="/assets/icons/bar.svg" alt="">
                             <hr>
@@ -92,9 +92,8 @@
                             <hr>
                             Expire Links
                         </div>
-                    </div> <!--visitors chart -->
-
-                    <hr>
+                    </div>
+                    <!--visitors chart -->
 
                     <!-- location & os chart -->
                     <div class="row text-center">
@@ -104,7 +103,68 @@
                         <div class="col-md-6 p-3">
                             <div id="osChart"></div>
                         </div>
+                    </div> <!-- location & os chart-->
+
+                    <hr>
+                    <!-- traffic source -->
+                    <section id="traffic-source" class="p-3">
+                        <h4 class="font-primary fw-bold">Traffic Source : </h4>
+                        <br>
+
+                        <div class="traffic-item d-flex justify-content-between border-bottom border-primary">
+                            <h6>facebook.com</h6>
+                            <h6>248</h6>
+                        </div>
+                        <div class="traffic-item d-flex justify-content-between border-bottom border-primary">
+                            <h6>google.com</h6>
+                            <h6>248</h6>
+                        </div>
+                        <div class="traffic-item d-flex justify-content-between border-bottom border-primary">
+                            <h6>Internal</h6>
+                            <h6>248</h6>
+                        </div>
+                        <div class="traffic-item d-flex justify-content-between border-bottom border-primary">
+                            <h6>Extranal</h6>
+                            <h6>248</h6>
+                        </div>
+
+                    </section><!-- #traffic-source-->
+
+                    <!-- table -->
+                    <div class="d-flex justify-content-between pt-5">
+                        <span class="h4 fw-bold font-primary">Visitors Data on Table :</span>
+                        <span class="btn btn-blue"><img src="/assets/icons/external-link.svg" alt=""> Export table as
+                            CSV</span>
                     </div>
+                    <table class="table p-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section><!-- #analitices-->
 
 
@@ -115,7 +175,8 @@
     </main>
     <hr>
     <footer class="text-center p-3">
-        <span class="first-brand">Link</span> <span class="last-brand">QR</span> | <a href="https://azonedev.com">azOneDev</a> &copy; 2022
+        <span class="first-brand">Link</span> <span class="last-brand">QR</span> | <a
+            href="https://azonedev.com">azOneDev</a> &copy; 2022
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
