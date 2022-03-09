@@ -71,14 +71,10 @@ header{
     margin-left: -5px;
     color: var(--blue);
 }
-.navbar-nav{
-    font-weight: bold;
-}
 
 /* link block */
 
 #link-block{
-    height: 100vh;
     margin-top: 10%;
 }
 
